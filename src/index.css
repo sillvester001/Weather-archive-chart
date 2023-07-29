@@ -1,0 +1,83 @@
+:root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.main{
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    margin: 50px 0;
+    background-color: #f0f0f0;
+}
+
+.container div{
+    margin: 5px 10px 20px;
+}
+.loading-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+  
+.chart-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  
+.chart-canvas {
+    width: 800px;
+    height: 450px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+  
+select {
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 200px;
+}
+  
+button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px;
+    display: block;
+}
+  
+button:last-child {
+    margin-right: 0;
+}
