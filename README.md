@@ -1,40 +1,29 @@
-## Задача
-Реализовать визуализацию изменений температуры и уровня осадков за последние.
+## Task
+Implement visualization of changes in temperature and precipitation levels over the past.
 
-## Макет
-![image](design.png)
+## Technical task
+- by default, the user should see temperature change data **for the entire period**, that is, all data received from the server should be used
+- the user should be able to specify the period up to a year
+- the interface should not be "frozen" and the user should be able to select all controls at any time
+- to display the graph use Canvas
+- data from IndexedDB is used to build a graph
+- data on the client is stored in two tables temperature and precipitation
+- data for each of the tables is requested from the server separately
+- if there is no data in the table, the data for it is requested from the server
+- data from the server are requested on demand when the corresponding data was requested from the local database and they were not found in it
+- record **for a single day** must be stored as a **separate object/record** in IndexedDB
 
-## Техническое задание
-- по умолчанию пользователь должен видеть данные изменения температуры **за весь период**, то есть должны использоваться все данные полученные с сервера
-- пользователь должен иметь возможность указать период с точностью до года
-- интерфейс не должен "замораживаться" и пользователю должны быть доступны для выбора все элементы управления в любой момент времени
-- для отображения графика использовать Canvas
-- для построения графика используются данные из IndexedDB
-- данные на клиенте хранятся в двух таблицах temperature и precipitation
-- данные для каждой из таблиц запрашиваются с сервера отдельно
-- при отсутствии данных в таблице, данные для нее запрашиваются с сервера
-- данные с сервера запрашиваются по требованию, когда произошло обращение за соответствующими данными в локальную базу данных и они в ней не найдены
-- запись **за отдельный день** должна хранится как **отдельный объект/запись** в IndexedDB
 
-## Требование к исходному коду
-- исходный код должен содержать необходимые комментарии
-- аккуратность исходного кода будет оцениваться наряду с функциональностью приложения
+## Technical requirements
+- you can not use third-party libraries for drawing graphs and working with IndexedDb
+- the application must work in the latest versions of Chrome and Firefox
 
-## Технические требования
-- нельзя использовать сторонние библиотеки для отрисовки графиков и работы с IndexedDb
-- приложение должно работать в последних версиях Chrome и Firefox
+- install dependencies
+     ```
+     npm install
+     ```
 
-## Установка и запуск
-- сделать fork репозитория
-
-- выбрать один из фреймворков React/Vue/Svelte/Vanilla
-
-- установить зависимости
-    ```
-    npm install
-    ```
-
-- запустить
-    ```
-    npm start
-    ```
+- run
+     ```
+     npm start
+     ```
